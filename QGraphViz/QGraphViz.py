@@ -579,7 +579,7 @@ class QGraphViz_Core(QWidget):
                 gspos = edge.source.global_pos
 
             if(edge.dest.parent_graph !=graph and not self.show_subgraphs):
-                gspos = edge.dest.parent_graph.global_pos
+                gdpos = edge.dest.parent_graph.global_pos
             else:
                 gdpos = edge.dest.global_pos
 
